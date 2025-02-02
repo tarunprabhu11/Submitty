@@ -92,7 +92,7 @@ class GlobalView extends AbstractView {
             "system_message" => $this->core->getConfig()->getSystemMessage(),
             "csrf_token" => $this->core->getCsrfToken(),
             "enable_banner" => $this->core->getConfig()->isDuckBannerEnabled(),
-            "duck_img" => $duck_img,
+            "duck_img" => "",#$duck_img,
             "use_mobile_viewport" => $this->output->useMobileViewport(),
             "sysadmin_email" => $this->core->getConfig()->getSysAdminEmail(),
             "collapse_sidebar" => array_key_exists('collapse_sidebar', $_COOKIE) && $_COOKIE['collapse_sidebar'] === 'true',
